@@ -4,3 +4,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* wrapper */
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    /* test */
+    background-color: aqua;
+}
+/* main */
+main{
+    width: 100%;
+    height: calc(100% - 80px);
+}
+/* main content */
+.main-content{
+    width: calc(100% - 250px);
+    height: 100%;
+    float: left;
+    /* test */
+    background-color: darkslategray;
+}
+.fake-header{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    /* test */
+    background-color: rgba(0,0, 0, 0.4);
+}
+/* aside menu */
+.nav-aside{
+    float: left;
+    height: 100%;
+    width: 250px;
+    /* test */
+    background-color: mediumblue;
+}
+/* inside nav elements */
+.logo{
+    height: 80px;
+    width: auto;
+}
+/* footer */
+footer{
+    height: 80px;
+    width: 100%;
+    background-color: lightslategray;
+}
