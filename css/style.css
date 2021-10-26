@@ -4,6 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* common */
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
 /* wrapper */
 .wrapper{
     width: 100%;
@@ -21,6 +28,7 @@ main{
     width: calc(100% - 250px);
     height: 100%;
     float: left;
+    overflow: hidden;
     /* test */
     background-color: darkslategray;
 }
@@ -36,17 +44,54 @@ main{
     float: left;
     height: 100%;
     width: 250px;
+    padding:0 7px ;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
     /* test */
     background-color: mediumblue;
+    
 }
 /* inside nav elements */
 .logo{
     height: 80px;
     width: auto;
 }
+/* primary element */
+.main-action{
+    
+    /* test */
+    background-color: bisque;
+    
+}
+/* create new playlist */
+.new-playlist{
+    
+    /* test */
+    background-color: blueviolet;
+}
+.new-playlist-list{
+    
+    overflow-y: auto;
+    height: 100%;
+    /* test */
+    background-color: brown;
+    
+    
+}
+/* personal info section */
+.personal-info{
+    /* test */
+    background-color: chartreuse;
+}
+.install{
+    border-bottom:1px solid black ;
+}
 /* footer */
 footer{
     height: 80px;
     width: 100%;
     background-color: lightslategray;
+    overflow: hidden;
 }
