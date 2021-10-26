@@ -47,6 +47,17 @@ main{
     /* test */
     background-color: rgba(0,0, 0, 0.4);
 }
+/* bottone finto header */
+.position{
+    margin-right: 50px;
+    text-align: right;
+    line-height: 80px;
+}
+.btn{ 
+    border: 1px solid white;
+    padding: 5px 20px;
+    border-radius: 30px;
+}
 /* top menu */
 .top-nav{
     text-align: center;
@@ -80,6 +91,7 @@ main{
 }
 /* song image ruond */
 .song-image-round{
+    text-align: center;
     border-radius: 50%;
     /* test */
     height: 100px;
@@ -138,8 +150,64 @@ main{
 }
 /* footer */
 footer{
+    display: flex;
+    justify-content: space-between;
     height: 80px;
     width: 100%;
     background-color: lightslategray;
     overflow: hidden;
+}
+/* footer-left */
+.footer-left{
+    display: flex;
+    align-items: center;
+}
+/* footer-img */
+.footer-img{
+    /* test */
+    height: 40px;
+    width: 40px;
+    background-color: darkgoldenrod;
+}
+/* media player */
+.media-player{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* media-player-button */
+.media-player-button li{
+    display: inline;
+}
+/* under the media buttom element */
+.song-section{
+    padding: 4px;
+    display: flex;
+}
+/* song bar */
+.song-bar{
+    width: 100%;
+    height: 10px;
+    background-color: gold;
+}
+.song-bar-active{
+    width: 30%;
+    height: 10px;
+    background-color: goldenrod;
+}
+/* footer right */
+.footer-right{
+    display: flex;
+    align-items: center;
+    
+}
+.volume-bar{
+    width: 100px;
+    height: 10px;
+    background-color: gold;
+}
+.volume-bar-active{
+    width: 30%;
+    height: 10px;
+    background-color: goldenrod;
 }
