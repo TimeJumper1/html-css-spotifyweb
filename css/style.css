@@ -235,14 +235,17 @@ footer{
     justify-content: center;
     width: 36%;
 }
+
 /* media-player-button */
 .media-player-button{
-    text-align: center;
+   
+    display: flex;
+    justify-content: space-evenly;
 }
-.media-player-button li{
-    display: inline;
-    padding: 20px;
+.media-player-button i{
+    color: white;
 }
+
 /* under the media buttom element */
 .song-section{
     padding: 4px;
