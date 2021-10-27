@@ -24,6 +24,47 @@ ul{
 img{
     width: 100%;
 }
+/* hoover element */
+.hover:hover{
+    color: white;
+}
+.small:hover{
+    text-decoration: underline white;
+}
+.scale:hover{
+    transform: scale(1.2);
+}
+/* img hover element */
+.hover-img-element{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 35px;
+    display: none;
+}
+.song-all:hover .hover-img-element{
+    display: inline-block;
+}
+.song-all:hover .song-image{
+    filter: opacity(0.7);
+}
+.song-all:hover .song-image-round{
+    filter: opacity(0.7);
+}
+.volume-bar-active:hover .hover-tondo{
+    display: inline-block;
+}
+.volume-bar-active:hover{
+    background-color: lime;
+}
+.song-bar-active:hover .hover-tondo{
+    display: inline-block;
+}
+.song-bar-active:hover{
+    background-color: lime;
+}
 /* wrapper */
 .wrapper{
     width: 100%;
@@ -82,8 +123,7 @@ main{
 }
 .row-flex{
     display: flex;
-    /* test */
-    /* height: 300px; */
+
     width: 100%;
     
 
@@ -95,9 +135,7 @@ main{
     padding: 10px;
     margin: 2px;
     text-align: center;
-}
-.song-image{
- 
+
 }
 /* song image ruond */
 .song-image-round img{
@@ -153,7 +191,7 @@ main{
     padding: 10px 0 1px;
     
 }
-.new-playlist h3{
+.nav-aside h3{
     padding: 5px 0 ;
     
 }
@@ -164,7 +202,13 @@ main{
     padding: 10px 12px;
     background-color:lightslategray;
 }
-
+.icon-box:hover{
+    background-color: white;
+}
+/* a chiedere al professore */
+.new-playlist span:hover{   
+    color: white;
+}
 .new-playlist-list{
     padding-top: 10px;
     overflow-y: auto;
@@ -238,12 +282,16 @@ footer{
 
 /* media-player-button */
 .media-player-button{
-   
+
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 .media-player-button i{
     color: white;
+}
+.bigger{
+    font-size: 25px;
 }
 
 /* under the media buttom element */
@@ -267,6 +315,19 @@ footer{
     height: 5px;
     background-color:lightgray;
     border-radius: 10px;
+}
+.hover-tondo{
+    content: "";
+    padding: 10px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    text-align: right;
+    position: absolute;
+    top: -7px;
+    right: 0;
+    display: none;
 }
 .song-time{
     padding: 0 10px;
