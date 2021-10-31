@@ -127,6 +127,7 @@ main{
 /* top menu */
 .top-nav{
     text-align: center;
+    max-width: 1000px;
 }
 .top-nav li{
     display: inline-block;
@@ -172,14 +173,20 @@ main{
     background-color: black;
     
 }
-.nav-aside-xs{
+.logo-small{
+    display: none;
+}
+.only-img{
+    display: none;
+}
+/* .nav-aside-xs{
     display: none;
     width: 50px;
     height: 100%;
     float: left;
     background-color: black;
     padding: 6px;
-}
+} */
 
 /* inside nav elements */
 .logo{
@@ -389,14 +396,45 @@ footer{
 /* responsive */
 @media screen and (max-width:600px) {
     .nav-aside{
+        width:50px ;
+        /* overflow:hidden ; */
+    }
+    .logo{
         display: none;
     }
-    .nav-aside-xs{
+    .logo-small{
+        display: block;
+        color: white;
+    }
+    .nav-aside h3{
+        display: none;
+    }
+    .new-playlist{
+        display: none;
+    }
+    .new-playlist-list{
+        display: none;
+    }
+    .personal-info span{
+        display: none;
+    }
+    .personal-info{
+        position: absolute;
+        bottom: 0;
+        left: 6px;
+    }
+    .main-action{
+        display: none;
+    }
+    .only-img{
+        display: block;
+    }
+    /* .nav-aside-xs{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-    }
+    } */
     
     .fake-header{
         width: calc(100% - 50px);
